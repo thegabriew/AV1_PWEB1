@@ -1,28 +1,39 @@
 <?php
 
-class Livro{
-    
-    private string $autor;
-    private string $titulo;
-    private int $idAutor;
+class Livro {
 
-    public function __construct($autor, $titulo, $idAutor)
-    {
+    private int $idLivro;
+    private string $titulo;
+    private string $autor;
+
+    public function __construct($autor, $titulo, $idLivro) {
         $this->autor = $autor;
         $this->titulo = $titulo;
-        $this->idAutor = $idAutor;
+        $this->idLivro = $idLivro;
     }
 
-    public function getAutor(){
-        $this->autor;
+    //gets
+
+    public function getAutor(): String {
+        return $this->autor;
     }
 
-    public function getTitulo(){
-        $this->titulo;
+    public function getTitulo(): String {
+        return $this->titulo;   
     }
 
-    public function get_idAutor(){
-        $this->idAutor;
+    public function get_idAutor(): int {
+        return $this->idLivro;
+    }
+
+    //sets
+
+    public function setAutor(String $autor): void {
+        $this -> autor = $autor;
+    }
+
+    public function setTitulo(String $titulo): void {
+        $this -> titulo = $titulo;
     }
 }
 

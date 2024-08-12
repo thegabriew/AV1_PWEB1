@@ -1,5 +1,23 @@
-create database BIBLIOTECA;
+CREATE DATABASE BIBLIOTECA;
 
-use BIBLIOTECA;
+USE BIBLIOTECA;
 
-insert into livro (titulo, ano, fk_idAutor) values ('O Saci', 1922, 1)
+CREATE TABLE livro (
+idLivro INT PRIMARY KEY AUTO_INCREMENT,
+titulo VARCHAR(255) NOT NULL,
+autor VARCHAR(255) NOT NULL
+
+);
+
+CREATE TABLE autor(
+idAutor INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(255) NOT NULL,
+nacionalidade VARCHAR(255) NOT NULL
+
+);
+
+CREATE TABLE estudante(
+idEstudante INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(255) NOT NULL,
+idade INT NOT NULL
+);
