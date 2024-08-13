@@ -46,6 +46,7 @@ h2.logo {
 p {
     margin-top: 18px;
     font-size: 18px;
+    line-height: 25px;
     font-family: var(--fonte2);
     color: var(--color3);
 }
